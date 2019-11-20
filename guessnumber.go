@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 )
-//main
+
 func main() {
 	var guess, number int
 	rand.Seed(time.Now().UnixNano())
