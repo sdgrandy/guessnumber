@@ -6,7 +6,6 @@ import (
 	"time"
 )
 
-test
 func main() {
 	var guess, number int
 	rand.Seed(time.Now().UnixNano())
