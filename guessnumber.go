@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 	"time"
-)
+))
 
 func main() {
 	var guess, number int
