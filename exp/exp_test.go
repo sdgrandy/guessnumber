@@ -10,6 +10,6 @@ import (
 func TestOptionalString(t *testing.T) {
 	Convey("getNine()", t, func() {
 		actual := exp.GetNine()
-		So(actual, ShouldEqual, 8)
+		So(actual, ShouldEqual, 9)
 	})
 }
