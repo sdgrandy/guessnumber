@@ -1,0 +1,11 @@
+version: '2'
+services:
+    guessnumber:
+        build:
+            context: .
+            args:
+                - ENVIRONMENT=${ENVIRONMENT}
+        ports:
+            - 10021:10021
+        environment:
+            - ENVIRONMENT=${ENVIRONMENT}
