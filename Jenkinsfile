@@ -1,5 +1,5 @@
 node {
-    // def projectName = env.JOB_NAME.split("/")[0]
+    def projectName = env.JOB_NAME.split("/")[0]
     // def url = "default"
     // def port = "default"
     // if(env.BRANCH_NAME=="master"){
@@ -25,10 +25,10 @@ node {
         echo "environment is ${ENVIRONMENT}"
         
         stage 'Build'
-        make docker-build
+        sh "make docker-build"
         
         stage 'Test'
-        make docker-up
+        sh "make docker-up"
     }
 }
 
